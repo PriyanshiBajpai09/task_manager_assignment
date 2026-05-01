@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview --host --port $PORT"
+    "start": "npx serve -s dist -l $PORT",
+    "lint": "eslint ."
   },
   "dependencies": {
     "axios": "^1.15.2",
