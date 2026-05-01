@@ -8,9 +8,7 @@ const app = express();
 const cors = require("cors");
 
 app.use(cors({
-  origin: "https://glorious-balance-production-f16b.up.railway.app/",
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true
+  origin: "*"
 }));
 app.use(express.json());
 
