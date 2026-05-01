@@ -12,8 +12,7 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
-app.options("*", cors(corsOptions)); // same options use kar
-
+app.options(/.*/, cors(corsOptions));
 app.use(express.json());
 
 mongoose
